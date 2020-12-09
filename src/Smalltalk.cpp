@@ -19,7 +19,7 @@ void populatePhrases(){
 	//for instance the following string comes from an American instance, the 10th iPerson and it is printing AMERICAN_PHRASE_2
 	//AMERICAN 10:Why yes, I would like to supersize that
 string Smalltalk::saySomething(){
-for(int i; i<mySmallTalk.size();i++){
+	for(int i; i<mySmallTalk.size();i++){
 
-}
+	}
 }
