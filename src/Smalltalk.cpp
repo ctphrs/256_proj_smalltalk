@@ -1,13 +1,15 @@
 #include <string>
 #include <vector>
-#include <memory>
 
 #include "../includes/constants.h"
 #include "../includes/Smalltalk.h"
 
 using namespace std;
 
-Smalltalk::Smalltalk(std::string myNationality,int iPerson=1): nationality(myNationality), iPerson(iPerson), current_phrase(0){
+Smalltalk::Smalltalk(string myNationality,int iPerson): nationality(myNationality), iPerson(iPerson), current_phrase(0){
+
+}
+Smalltalk::~Smalltalk(){
 
 }
 void populatePhrases(){
@@ -19,7 +21,7 @@ void populatePhrases(){
 	//for instance the following string comes from an American instance, the 10th iPerson and it is printing AMERICAN_PHRASE_2
 	//AMERICAN 10:Why yes, I would like to supersize that
 string Smalltalk::saySomething(){
-	for(int i; i<mySmallTalk.size();i++){
-
-	}
+string message = nationality+" "+to_string(iPerson)+": "+Smalltalk::mySmallTalk[current_phrase];
+current_phrase = (current_phrase+1)%Smalltalk::mySmallTalk.size();
+return message;
 }

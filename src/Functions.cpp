@@ -1,4 +1,6 @@
+
 #include <vector>
+
 #include "../includes/Functions.h"
 #include "../includes/Smalltalk.h"
 #include "../includes/Smalltalk_American.h"
@@ -13,7 +15,7 @@
  * \param numAmerican " AMerican "
  * \param numbAmericanDonutEnthusiest " American Donut Enthusiest "
  */
-void getPeople(std::vector<Smalltalk*> &mv,int numBrit = 1, int numAmerican = 1, int numbAmericanDonutEnthusiest = 1){
+void getPeople(std::vector<Smalltalk*> &mv,int numBrit, int numAmerican, int numbAmericanDonutEnthusiest){
 	int identity = 1;
 	for(int i = 0; i<numBrit; i++){
 		Smalltalk_Brit *brit = new Smalltalk_Brit(identity);
