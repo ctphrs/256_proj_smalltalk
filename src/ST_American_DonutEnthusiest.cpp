@@ -3,6 +3,8 @@
 #include "../includes/ST_American_DonutEnthusiest.h"
 #include "../includes/Smalltalk_American.h"
 #include "../includes/constants.h"
+
+
 ST_American_DonutEnthusiest::ST_American_DonutEnthusiest(int iPerson):Smalltalk_American(AMERICAN_DE,iPerson){
 	ST_American_DonutEnthusiest::populatePhrases();
 }
